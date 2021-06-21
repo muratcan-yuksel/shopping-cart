@@ -1,9 +1,10 @@
 import React from 'react'
 import Navbar from "./Navbar"
+import {footer, body} from "../styles/layout.module.css"
 
 export default function Layout({children}) {
     return (
-        <div className="layout">
+        <div className={body}>
             <Navbar />
             <div className="content">
                 {/* in order for the content outside of the layour to be seen
@@ -11,7 +12,7 @@ export default function Layout({children}) {
                 I need to do this "children" thing */}
                 {children}
             </div>
-            <footer>
+            <footer className={footer}>
                 <p>Copyright 2021 Murat Can Yüksel</p>
             </footer>
             
