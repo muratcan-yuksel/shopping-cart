@@ -13,8 +13,8 @@
 }
 .indexContainer{
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    align-items:flex-end;
+    align-items:center;
     padding-top:2em;
 }
