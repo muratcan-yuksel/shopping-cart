@@ -14,15 +14,15 @@ import UpsideHegel from "../images/upside-hegel.png"
 
 const Cards= (props)=>[
 {title:"Anarchism T-shirt", price:20, id:uniqid(), img:Anarchism, sign:"$"},
-{title:"", price:"", id:"", img:"", sign:"$"},
-{title:"", price:"", id:"", img:"", sign:"$"},
-{title:"", price:"", id:"", img:"", sign:"$"},
-{title:"", price:"", id:"", img:"", sign:"$"},
-{title:"", price:"", id:"", img:"", sign:"$"},
-{title:"", price:"", id:"", img:"", sign:"$"},
-{title:"", price:"", id:"", img:"", sign:"$"},
-{title:"", price:"", id:"", img:"", sign:"$"},
-{title:"", price:"", id:"", img:"", sign:"$"}
+{title:"Hegel was wrong T-shirt", price:20, id:uniqid(), img:WrongHegel, sign:"$"},
+{title:"Hobgoblin T-shirt", price:20, id:uniqid(), img:Hobgoblin, sign:"$"},
+{title:"Mad Marx T-shirt", price:20, id:uniqid(), img:MadMarx, sign:"$"},
+{title:"Mard Marx T-shirt Black", price:20, id:uniqid(), img:MarxBlack, sign:"$"},
+{title:"Life gives you lemons T-shirt", price:20, id:uniqid(), img:MarxLemon, sign:"$"},
+{title:"Wittgenstein and Russell-Philosophy Club T-shirt", price:20, id:uniqid(), img:PhiloClub, sign:"$"},
+{title:"Radical Freedom T-shirt", price:20, id:uniqid(), img:Freedom, sign:"$"},
+{title:"Marx-Revolution T-shirt", price:20, id:uniqid(), img:Revolution, sign:"$"},
+{title:"Hegel turned upside down T-shirt", price:20, id:uniqid(), img:UpsideHegel, sign:"$"}
 ]
 
 
@@ -31,7 +31,7 @@ export default function Shop() {
     return (
         <Layout>
         <div>
-            <p>Cards[0].price</p>
+            
 
         </div>
         </Layout>
