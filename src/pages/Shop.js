@@ -36,7 +36,7 @@ export default function Shop() {
         const mappedCards= state.map((item)=>{
             return(
                 <div key={item.id}
-                className=" col-4 col-sm-4 col-md-3 col-lg-2  mt-5 ms-5 text-center"
+                className=" col-4  text-center" style={{width:"15em"}}
                 >
                     <div className="card h-100 mx-auto w-100 ">
                   <img
@@ -47,13 +47,9 @@ export default function Shop() {
                   ></img>
                   <div className="card-body">
                     <p className="card-text">{item.title}</p>
+                    <p className="card-text">{item.sign} {item.price}</p>
                   </div>
                 </div>
-                    
-                    
-                    
-                    
-                    
                 </div>
             )
         })
