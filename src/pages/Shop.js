@@ -11,7 +11,7 @@ import PhiloClub from "../images/philo-club.png"
 import Freedom from "../images/radical-freedom.png"
 import Revolution from "../images/revolution.png"
 import UpsideHegel from "../images/upside-hegel.png"
-import { Link } from "@reach/router";
+import { Link } from "gatsby"
 
 
 
@@ -20,38 +20,44 @@ import { Link } from "@reach/router";
 export default function Shop() {
 
     const Cards= (props)=>[
-        {title:"Anarchism T-shirt", price:20, id:uniqid(), img:Anarchism, sign:"$"},
-        {title:"Hegel was wrong T-shirt", price:20, id:uniqid(), img:WrongHegel, sign:"$"},
-        {title:"Hobgoblin T-shirt", price:20, id:uniqid(), img:Hobgoblin, sign:"$"},
-        {title:"Mad Marx T-shirt", price:20, id:uniqid(), img:MadMarx, sign:"$"},
-        {title:"Mard Marx T-shirt Black", price:20, id:uniqid(), img:MarxBlack, sign:"$"},
-        {title:"Life gives you lemons T-shirt", price:20, id:uniqid(), img:MarxLemon, sign:"$"},
-        {title:"Wittgenstein and Russell-Philosophy Club T-shirt", price:20, id:uniqid(), img:PhiloClub, sign:"$"},
-        {title:"Radical Freedom T-shirt", price:20, id:uniqid(), img:Freedom, sign:"$"},
-        {title:"Marx-Revolution T-shirt", price:20, id:uniqid(), img:Revolution, sign:"$"},
-        {title:"Hegel turned upside down T-shirt", price:20, id:uniqid(), img:UpsideHegel, sign:"$"}
+        {title:"Anarchism T-shirt", price:20, id:uniqid(), img:Anarchism, sign:"$", to:"/"},
+        {title:"Hegel was wrong T-shirt", price:20, id:uniqid(), img:WrongHegel, sign:"$", to:"/"},
+        {title:"Hobgoblin T-shirt", price:20, id:uniqid(), img:Hobgoblin, sign:"$", to:"/"},
+        {title:"Mad Marx T-shirt", price:20, id:uniqid(), img:MadMarx, sign:"$", to:"/"},
+        {title:"Mard Marx T-shirt Black", price:20, id:uniqid(), img:MarxBlack, sign:"$", to:"/"},
+        {title:"Life gives you lemons T-shirt", price:20, id:uniqid(), img:MarxLemon, sign:"$", to:"/"},
+        {title:"Wittgenstein and Russell-Philosophy Club T-shirt", price:20, id:uniqid(), img:PhiloClub, sign:"$", to:"/"},
+        {title:"Radical Freedom T-shirt", price:20, id:uniqid(), img:Freedom, sign:"$", to:"/"},
+        {title:"Marx-Revolution T-shirt", price:20, id:uniqid(), img:Revolution, sign:"$", to:"/"},
+        {title:"Hegel turned upside down T-shirt", price:20, id:uniqid(), img:UpsideHegel, sign:"$", to:"/"}
         ];
         
         const [state, setState]= useState(Cards)
         
         const mappedCards= state.map((item)=>{
             return(
+                          
                 <div key={item.id}
                 className=" col-4  text-center" style={{width:"15em"}}
                 >
                     <div className="card h-100 mx-auto w-100 ">
+                    <Link to={item.to}>      
                   <img
+                 
                  src={item.img}
                     id={item.id}
                     className="card-img-top h-100 "
                     alt={item.title}
                   ></img>
+                  </Link> 
                   <div className="card-body">
                     <p className="card-text">{item.title}</p>
                     <p className="card-text">{item.sign} {item.price}</p>
                   </div>
                 </div>
                 </div>
+                
+ 
             )
         })
 
