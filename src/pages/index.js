@@ -11,7 +11,7 @@ export default function Home() {
 
 <img src="/welcome.jpg" style={{maxWidth:"100%"}, {maxHeight:"55vh"}} />
 <button type="button" style={{marginTop:"3em"}} class="btn btn-danger btn-lg">
-  <Link to="/Shop">
+  <Link style={ {color:"black"}} to="/Shop">
   <del>SHOP</del> CONSUME NOW
   </Link>
   </button>

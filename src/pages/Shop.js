@@ -11,6 +11,7 @@ import PhiloClub from "../images/philo-club.png"
 import Freedom from "../images/radical-freedom.png"
 import Revolution from "../images/revolution.png"
 import UpsideHegel from "../images/upside-hegel.png"
+import { Link } from "@reach/router";
 
 
 
