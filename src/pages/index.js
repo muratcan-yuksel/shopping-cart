@@ -8,7 +8,9 @@ export default function Home() {
 <div className={indexContainer}>
 {/* <div>Hello world bruh</div> */}
 
-<img src="/welcome.jpg" style={{maxWidth:"100%"}, {maxHeight:"60vh"}} />
+<img src="/welcome.jpg" style={{maxWidth:"100%"}, {maxHeight:"50vh"}} />
+
+
 </div>
   </Layout>
   )
