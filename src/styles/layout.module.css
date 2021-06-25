@@ -18,3 +18,10 @@
     align-items:center;
     padding-top:2em;
 }
+.shopContainer{
+     display:flex;
+  justify-content: center;
+  align-items:center;
+  margin-top:2em;
+
+}
