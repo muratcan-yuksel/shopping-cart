@@ -23,13 +23,13 @@ export default function Shop() {
         {title:"Anarchism T-shirt", price:20, id:uniqid(), img:Anarchism, sign:"$", to:"/AnarchismPage"},
         {title:"Hegel was wrong T-shirt", price:20, id:uniqid(), img:WrongHegel, sign:"$", to:"/WrongHegelPage"},
         {title:"Hobgoblin T-shirt", price:20, id:uniqid(), img:Hobgoblin, sign:"$", to:"/HobgoblinPage"},
-        {title:"Mad Marx T-shirt", price:20, id:uniqid(), img:MadMarx, sign:"$", to:"/"},
-        {title:"Mard Marx T-shirt Black", price:20, id:uniqid(), img:MarxBlack, sign:"$", to:"/"},
-        {title:"Life gives you lemons T-shirt", price:20, id:uniqid(), img:MarxLemon, sign:"$", to:"/"},
-        {title:"Wittgenstein and Russell-Philosophy Club T-shirt", price:20, id:uniqid(), img:PhiloClub, sign:"$", to:"/"},
-        {title:"Radical Freedom T-shirt", price:20, id:uniqid(), img:Freedom, sign:"$", to:"/"},
-        {title:"Marx-Revolution T-shirt", price:20, id:uniqid(), img:Revolution, sign:"$", to:"/"},
-        {title:"Hegel turned upside down T-shirt", price:20, id:uniqid(), img:UpsideHegel, sign:"$", to:"/"}
+        {title:"Mad Marx T-shirt", price:20, id:uniqid(), img:MadMarx, sign:"$", to:"/MadMarxPage"},
+        {title:"Mard Marx T-shirt Black", price:20, id:uniqid(), img:MarxBlack, sign:"$", to:"/MadMarxBlackPage"},
+        {title:"Life gives you lemons T-shirt", price:20, id:uniqid(), img:MarxLemon, sign:"$", to:"/MarxLemonPage"},
+        {title:"Wittgenstein and Russell-Philosophy Club T-shirt", price:20, id:uniqid(), img:PhiloClub, sign:"$", to:"/PhilosophyClubPage"},
+        {title:"Radical Freedom T-shirt", price:20, id:uniqid(), img:Freedom, sign:"$", to:"/RadicalFreedomPage"},
+        {title:"Marx-Revolution T-shirt", price:20, id:uniqid(), img:Revolution, sign:"$", to:"/RevolutionPage"},
+        {title:"Hegel turned upside down T-shirt", price:20, id:uniqid(), img:UpsideHegel, sign:"$", to:"/UpsideHegelPage"}
         ];
         
         const [state, setState]= useState(Cards)
