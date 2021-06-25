@@ -21,7 +21,7 @@ export default function Shop() {
 
     const Cards= (props)=>[
         {title:"Anarchism T-shirt", price:20, id:uniqid(), img:Anarchism, sign:"$", to:"/AnarchismPage"},
-        {title:"Hegel was wrong T-shirt", price:20, id:uniqid(), img:WrongHegel, sign:"$", to:"/"},
+        {title:"Hegel was wrong T-shirt", price:20, id:uniqid(), img:WrongHegel, sign:"$", to:"/WrongHegelPage"},
         {title:"Hobgoblin T-shirt", price:20, id:uniqid(), img:Hobgoblin, sign:"$", to:"/"},
         {title:"Mad Marx T-shirt", price:20, id:uniqid(), img:MadMarx, sign:"$", to:"/"},
         {title:"Mard Marx T-shirt Black", price:20, id:uniqid(), img:MarxBlack, sign:"$", to:"/"},
