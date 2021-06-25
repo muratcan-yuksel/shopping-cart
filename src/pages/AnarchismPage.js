@@ -15,7 +15,7 @@ const anarchism={title:"Anarchism T-shirt", price:20, img:Anarchism, sign:"$"}
       <Layout>
         <div className={shopContainer}>
         <div 
-        className=" col-4  text-center" 
+        className=" col-8 col-md-4 col-lg-4  text-center" 
         >
       <div className="card h-100 mx-auto w-100 ">          
           <img      
@@ -29,7 +29,7 @@ const anarchism={title:"Anarchism T-shirt", price:20, img:Anarchism, sign:"$"}
           </div>
         </div>
         </div>
-        <button style={{marginLeft:"2rem"}} className="btn btn-danger">Add to cart</button>
+        <button style={{marginTop:"1rem"}} className="btn btn-danger">Add to cart</button>
         </div>
         </Layout>
     )
